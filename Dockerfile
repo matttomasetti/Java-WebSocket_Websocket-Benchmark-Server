@@ -17,7 +17,7 @@ RUN apt-get -y update \
 
 # Install Gradle
 RUN wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp \
-    && unzip -d /opt/gradle /tmp/gradle-*.zip \
+    && unzip -d /opt/gradle /tmp/gradle-*.zip
 
 # Build project
 RUN cd /home/websocket \
